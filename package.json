@@ -1,0 +1,15 @@
+{
+  "name": "imagezut",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KNOSERO/imageZUT/issues"
+  },
+  "homepage": "https://github.com/KNOSERO/imageZUT#readme"
+}
