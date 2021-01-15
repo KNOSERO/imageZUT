@@ -4,12 +4,19 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "debug": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/KNOSERO/imageZUT/issues"
   },
-  "homepage": "https://github.com/KNOSERO/imageZUT#readme"
+  "homepage": "https://github.com/KNOSERO/imageZUT#readme",
+  "dependencies": {
+    "canvas": "^2.6.1",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.7"
+  }
 }
