@@ -32,7 +32,7 @@ class Picture {
         });
 
         this.ctx.beginPath();
-        this.ctx.font = '20px Arial'
+        this.ctx.font = '50px Arial'
         this.ctx.fillStyle = '#FF0000'
         this.ctx.fillText(dane.name, 30, 30);
 
