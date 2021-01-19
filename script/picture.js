@@ -34,7 +34,7 @@ class Picture {
         this.ctx.beginPath();
         this.ctx.font = '50px Arial'
         this.ctx.fillStyle = '#FF0000'
-        this.ctx.fillText(dane.name, 30, 30);
+        this.ctx.fillText(dane.name, 50, 50);
 
         dane.poz.forEach(poz => {
             this.ctx.lineWidth = 3;
