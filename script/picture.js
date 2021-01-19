@@ -2,7 +2,7 @@ const { createCanvas } = require('canvas');
 
 class Picture {
 
-    constructor(dane) {
+    constructor(dane, roomName) {
         this.canvas = createCanvas(640, 480);
         this.ctx = this.canvas.getContext('2d');
 
@@ -16,6 +16,18 @@ class Picture {
             room.poz.forEach(poz => {
                 this.ctx.lineTo(poz.x, poz.y);
             });
+            if(room.name == roomName) {
+                this.ctx.fillStyle = '#727EBF'
+                this.ctx.fill();
+            }
+            if(room.name == 'WC') {
+                this.ctx.fillStyle = '#0080ff'
+                this.ctx.fill();
+            }
+            if(room.name == 'EAT') {
+                this.ctx.fillStyle = '#ffa500'
+                this.ctx.fill();
+            }
             this.ctx.stroke();
         });
 

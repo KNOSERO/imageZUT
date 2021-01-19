@@ -13,7 +13,7 @@ app.get('/:locName/:roomName', async (req, res, next) => {
     })
         .then(all => {
 
-            const img = new Picture(all.floor.floor[0]);
+            const img = new Picture(all.floor.floor[0], req.params.roomName);
 
             res.setHeader('Content-Type', 'image/png');
             img.canvas
