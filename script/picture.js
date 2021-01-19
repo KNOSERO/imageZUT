@@ -28,6 +28,10 @@ class Picture {
                 this.ctx.fillStyle = '#ffa500'
                 this.ctx.fill();
             }
+            if(room.name == 'EXIT') {
+                this.ctx.fillStyle = '#66B290'
+                this.ctx.fill();
+            }
             this.ctx.stroke();
         });
 
