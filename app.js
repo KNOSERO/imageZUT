@@ -16,10 +16,11 @@ app.get('/:locName/:roomName', async (req, res, next) => {
             const img = new Picture(all.floor.floor[0]);
 
             res.setHeader('Content-Type', 'image/png');
-            img.canvas
-                .pngStream()
+            const buffer = imgcanvas.toBuffer('image/png')
+            //img.canvas
+            buffer
+                //.pngStream()
                 .pipe(res);
-
         })
         .catch(() => {
             res.send(null);
